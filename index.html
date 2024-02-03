@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Danielle Marie de Guzman</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav1">
+            <a href="#landingPage" class="brand"><h1><span>D</span>anielle<span>M</span>.</h1></a>
+        </div>
+        <div class="nav">
+            <a class="text" href="#landingPage">Home</a>
+            <a class="text" href="#projects">Projects</a>
+            <a class="text" href="#about-me">About Me</a>
+            <a class="text" href="#contact">Contact</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </header>
+    <section class="vidContainer" id="landingPage">
+        <video loop="loop" 
+        autoplay="autoplay" 
+        playsinline="" 
+        muted="muted" 
+        class="video" 
+        style="min-height: 550px;">
+        <source src="/assets/myVid2.mp4" type="video/mp4">
+        </video>
+        <div class="headliner">
+            <h1>Hello, I am<br><span class="diff-style">Danielle</span></h1>
+            <button onClick='window.location="#about-me"'>About Me</button>
+        </div>
+    </section>
+    
+    <!-- PROJECTS -->
+
+    <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="project-img">
+                <img src="/assets/sophie.png" alt="">
+                <div class="details">
+                    <h2>"Sophie"</h2>
+                    <p>Language used: <span>Java</span></p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </div>
+            </div>
+            <div class="project-img">
+                <img src="/assets/tetrismania.png" alt="">
+                <div class="details">
+                    <h2>Tetris Mania</h2>
+                    <p>Language used: <span>Python</span></p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+
+    <section id="about-me" class="about-me">
+        <h1>About Me</h1>
+        <div class="about-me-container">
+            <div class="pic-container">
+                <img class="my-picture" src="/assets/about-me-picture.jpg" alt="">
+            </div>
+            <div class="bio-container">
+                <div class="my-bio">
+                    <p>Hello there! I'm <b>Danielle Marie C. Deguzman</b>, a passionate and driven student developer currently 
+                        pursuing my academic journey at PHINMA-University of Pangasinan. As I navigate through my academic and coding adventures, 
+                        I am eager to contribute, innovate, and leave a lasting mark in the ever-evolving landscape of technology.
+                    </p>
+                    <p>
+                        <b>Let's connect, collaborate, and code for a better tomorrow!</b>
+                    </p>
+                </div>
+                <div class="my-languages">
+                    <p>Languages: </p>
+                </div>
+                <div class="icon-container">
+                    <img class="lang-icon" src="/assets/icons8-html-50.png" alt="">
+                    <img class="lang-icon" src="/assets/icons8-css-50.png" alt="">
+                    <img class="lang-icon" src="/assets/icons8-javascript-50.png" alt="">
+                    <img class="lang-icon" src="/assets/icons8-python-50.png" alt="">
+                    <img class="lang-icon" src="/assets/icons8-kotlin.svg" alt="">
+                    <img class="lang-icon" src="/assets/icons8-java-50.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <section class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
